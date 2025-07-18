@@ -76,11 +76,6 @@ body{
     filter: invert(100%);
 }
 
-
-.header img{
-     /* display: none; */
-}
-
 .header{
     background-color: white;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
@@ -179,3 +174,78 @@ a{
     font-size: 1.2rem;
 }
 
+.lowerHeader img{
+ /* display: none; */
+}
+
+.lowerHeader{
+    display: grid;
+    grid-template-columns: 12fr 7fr;
+}
+
+.buttons>button{
+    background-color: #1992d4;
+    color: white;
+    height: 50px;
+    width: 120px;
+    border: none;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 60px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10%;
+    gap: 10%;
+}
+
+.buttons>button:hover{
+    background-color: #176e9c;
+}
+
+.greeting{
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+}
+
+.greeting img{
+    height: 100px;
+    width: auto;
+}
+
+.pfpWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+
+.greetingText{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.greetingText :first-child{
+    display: flex;
+    align-items: flex-end;
+} 
+
+.greetingText :last-child{
+    display: flex;
+    align-items: flex-start;
+}  
+
+#usernameContainer{
+    /* padding-top: 1%; */
+    font-size: 1.5rem;
+    font-weight: bold;
+} 
+
+#hiContainer{
+    font-size: 1rem;
+    padding-bottom: 1%;
+    font-weight: bold;
+}
