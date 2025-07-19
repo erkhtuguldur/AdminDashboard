@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    /* border: solid red 1px; */
 }
 
 html,body {
@@ -78,7 +77,6 @@ body{
 
 .header{
     background-color: white;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
     display: grid;
     grid-template-rows: 1fr 1fr;
     height: 25vh;
@@ -160,7 +158,6 @@ a{
 
 .profileContainer{
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     gap: 15%;
     height: 100%;
@@ -172,10 +169,6 @@ a{
     font-weight: bold;
     color: black;
     font-size: 1.2rem;
-}
-
-.lowerHeader img{
- /* display: none; */
 }
 
 .lowerHeader{
@@ -249,9 +242,6 @@ a{
     font-weight: bold;
 }
 
-.mainContent img{
-    /* display: none; */
-}
 
 .mainContent{
     display: grid;
@@ -410,4 +400,17 @@ a{
 
 .trendingBio{
     color: rgb(94, 94, 94);
+}
+
+.header,.trendingContainer,.announcementsContainer,.projects>*{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+a:hover,button:hover{
+    transform: scale(1.1);
+}
+
+a,button{
+    transition: transform .2s;
 }
