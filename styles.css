@@ -16,7 +16,7 @@ body{
 
 .notSidebar{
     display: grid;
-    grid-template-rows: 3fr 9fr;
+    grid-template-rows: 25vh 75vh;
 }
 
 .sidebar{
@@ -82,7 +82,7 @@ body{
     display: grid;
     grid-template-rows: 1fr 1fr;
     height: 25vh;
-
+    padding: 1vh;
 }
 
 .mainContent{
@@ -239,7 +239,6 @@ a{
 }  
 
 #usernameContainer{
-    /* padding-top: 1%; */
     font-size: 1.5rem;
     font-weight: bold;
 } 
@@ -247,5 +246,126 @@ a{
 #hiContainer{
     font-size: 1rem;
     padding-bottom: 1%;
+    font-weight: bold;
+}
+
+.mainContent img{
+    /* display: none; */
+}
+
+.mainContent{
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+
+.projectsSection{
+    display: grid;
+    grid-template-rows: 1fr 15fr;
+}
+
+.projects > *{
+    background-color: white;
+    border-radius: 10px;
+    border-left: #f0b429 solid 8px;
+    padding: 5%;
+}
+
+.projects{
+    display: grid;
+    grid-template-rows: 20vh 20vh 20vh;
+    grid-template-columns: 25vw 25vw ;
+    padding-left: 30px;
+    gap: 30px;
+}
+
+.projectsTitle{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.projectDescription{
+    color: rgb(94, 94, 94);
+}
+
+.projectsHeader{
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.iconsContainer img{
+    height: 30px;
+    width: 30px;
+}
+
+.projects>div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.iconsContainer{
+    display: flex;
+    align-self: flex-end;
+    gap: 2vw;
+}
+
+.sideMainContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcementSection{
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+}
+
+.announcementsContainer{
+    background-color: white;
+    border-radius: 10px;
+    padding: 4% 6% 4% 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.announcementCell{
+    padding-left: 5%;
+    padding-right: 7%;
+}
+
+.sideMainContainer .sectionTitle{
+    padding-left:5%;
+}
+
+.announcement{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    gap: 2px;
+}
+
+.announcement:not(:last-child){
+    border-bottom: solid rgb(165, 165, 165) 1px;
+}
+
+.announcementTitle{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.announcementDescription{
+    font-size: 0.8rem;
+    color: rgb(94, 94, 94);
+}
+
+.announcementSection>.sectionTitle{
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
     font-weight: bold;
 }
